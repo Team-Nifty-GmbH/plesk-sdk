@@ -34,6 +34,14 @@ class Plesk extends Connector
         protected string $apiKey,
     ) {}
 
+    public function defaultHeaders(): array
+    {
+        return [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ];
+    }
+
     public function auth(): Auth
     {
         return new Auth($this);
