@@ -34,14 +34,6 @@ class Plesk extends Connector
         protected string $apiKey,
     ) {}
 
-    public function defaultHeaders(): array
-    {
-        return [
-            'Content-Type' => 'application/json',
-            'Accept' => 'application/json',
-        ];
-    }
-
     public function auth(): Auth
     {
         return new Auth($this);
@@ -60,6 +52,14 @@ class Plesk extends Connector
     public function databases(): Databases
     {
         return new Databases($this);
+    }
+
+    public function defaultHeaders(): array
+    {
+        return [
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ];
     }
 
     public function dns(): Dns
