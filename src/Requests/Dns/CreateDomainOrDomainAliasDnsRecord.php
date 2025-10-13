@@ -43,13 +43,13 @@ class CreateDomainOrDomainAliasDnsRecord extends Request implements HasBody
 
     public function defaultBody(): array
     {
-        return [
+        return array_filter([
             'type' => $this->type?->value,
             'host' => $this->host,
             'value' => $this->value,
             'opt' => $this->opt,
             'ttl' => $this->ttl,
-        ];
+        ], fn($value) => ! is_null($value));
     }
 
     public function defaultQuery(): array
