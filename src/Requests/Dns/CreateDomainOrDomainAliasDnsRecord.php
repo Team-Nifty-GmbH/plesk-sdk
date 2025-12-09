@@ -49,7 +49,7 @@ class CreateDomainOrDomainAliasDnsRecord extends Request implements HasBody
             'value' => $this->value,
             'opt' => $this->opt,
             'ttl' => $this->ttl,
-        ], fn($value) => ! is_null($value));
+        ], fn ($value) => ! is_null($value));
     }
 
     public function defaultQuery(): array
