@@ -12,7 +12,7 @@ This SDK provides a clean, intuitive interface for interacting with the Plesk AP
 - 🏗️ **Built with Saloon** - Leveraging the powerful Saloon HTTP client for reliable API interactions
 - 🔧 **Laravel Integration** - First-class Laravel support with Service Provider, Facade, and helper functions
 - 📦 **Standalone Usage** - Can be used in any PHP project, not just Laravel
-- 🎯 **Type-Safe** - Full PHP 8.2+ type hints and enums for better IDE support
+- 🎯 **Type-Safe** - Full PHP 8.4+ type hints and enums for better IDE support
 - 📊 **DTO Support** - Structured data transfer objects using Spatie's Laravel Data package
 - ⚡ **Auto-generated** - Generated from OpenAPI specification for accuracy and completeness
 - 🔄 **Configurable** - SSL verification, timeouts, and retry logic configuration
@@ -32,7 +32,7 @@ This SDK provides a clean, intuitive interface for interacting with the Plesk AP
 
 ### Requirements
 
-- PHP 8.2+
+- PHP 8.4+
 - Laravel 11.x or 12.x (optional, for Laravel integration)
 - Plesk server with API access enabled
 
